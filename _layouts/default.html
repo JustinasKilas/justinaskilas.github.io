@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Default</title>
-
-    <link rel="stylesheet" type="text/css" href="/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/3/flatly/bootstrap.min.css">
-
+    <title>{{ page.title }}</title>
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
-
 <body>
-{% include header.html %}
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/cv">CV</a></li>
+        <li><a href="/blog">Blog</a></li>
+    </ul>
+</nav>
 <div class="container">
 
+    {{ content }}
 
-</div>
-
-{% include footer.html %}
-
+</div><!-- /.container -->
+<footer>
+    <ul>
+        <li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
+        <li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
+    </ul>
+</footer>
 </body>
-
 </html>
